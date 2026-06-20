@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이상한 북클럽</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #fafaf8;
+            color: #3a3a3a;
+            line-height: 1.8;
+        }
+
+        header {
+            background: #fff;
+            padding: 2rem 0;
+            border-bottom: 1px solid #efefef;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #FF2BD6;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: #999;
+            font-weight: normal;
+        }
+
+        .hero {
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            line-height: 1.4;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: #FF2BD6;
+            color: white;
+            text-decoration: none;
+            border-radius: 0;
+            font-weight: 500;
+            transition: background 0.3s;
+            margin-bottom: 3rem;
+        }
+
+        .cta-button:hover {
+            background: #ff1fbf;
+        }
+
+        .issues-section {
+            margin: 3rem 0;
+        }
+
+        .issues-section h2 {
+            font-size: 1.4rem;
+            color: #FF2BD6;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .issue-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 0;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .issue-card:hover {
+            border-color: #FF2BD6;
+            box-shadow: 0 2px 8px rgba(255, 43, 214, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .issue-number {
+            font-size: 0.9rem;
+            color: #FF2BD6;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .issue-title {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            font-weight: 400;
+        }
+
+        .issue-date {
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        .footer {
+            background: #f5f5f3;
+            padding: 3rem 0;
+            margin-top: 3rem;
+            text-align: center;
+            border-top: 1px solid #efefef;
+        }
+
+        .footer-content {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .footer-links {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: #FF2BD6;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-info {
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        @media (max-width: 640px) {
+            .logo {
+                font-size: 1.6rem;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">📚 이상한 북클럽</div>
+            <p class="subtitle">제3의시간 스토리랩</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="issues-section" id="issues" style="padding-top: 2rem;">
+            <!-- 새 호를 이 위에 추가하세요 (최신순) -->
+
+            <a href="issue_1.html" class="issue-card">
+                <div class="issue-number">[1호]</div>
+                <div class="issue-title">저희 북클럽해요</div>
+                <div class="issue-date">이상한 북클럽의 탄생</div>
+            </a>
+
+        </section>
+    </main>
+
+    <script>
+        // 자동으로 최신 호를 하이라이트
+        console.log('이상한 북클럽에 방문해주셔서 감사합니다! 📚');
+    </script>
+</body>
+</html>
